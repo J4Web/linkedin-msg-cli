@@ -19,14 +19,14 @@ A CLI tool to generate personalized LinkedIn messages for job applications and r
 ## Installation 📦
 
 ```bash
-npm install -g linkedin-message-gen
+npm install linkedin-msg-cli
 ```
 
 
 ## Usage 🚀
 
 ```bash
- npx linkedin-message-gen
+ npx linkedin-msg-cli
  ```
 
 
