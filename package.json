@@ -1,0 +1,34 @@
+{
+  "name": "linkedin-msg-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "linkedin-msg-cli": "./dist/bin"
+  },
+  "scripts": {
+    "build": "bun build --minify --target=node --outfile=dist/bin src/entry.ts",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "prepublish": "npm run build",
+    "start": "node dist/bin",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "changeset version",
+    "publish": "bun publish"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/mustache": "^4.2.5",
+    "chalk": "^5.4.1",
+    "clipboardy": "^4.0.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.3.3",
+    "mustache": "^4.2.0",
+    "typescript": "^5.7.3"
+  }
+}
